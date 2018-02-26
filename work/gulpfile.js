@@ -39,15 +39,20 @@ gulp.task('stylus', function() {
 
 // Работа с Pug
 gulp.task('pug', function() {
-    return gulp.src('dev/pug/pages/*.pug')
-        .pipe(plumber())
-        .pipe(pug({
+    return gulp.src('./dev/pug/pages/index.pug')
+      .pipe(plumber({
+            errorHandler: notify.onError(function(err){
+                  return {
+                        title: 'Pug',
+                        message: err.message
+                  }
+            })
+      }))
+      .pipe(pug({
             pretty: true
-        }))
-        .on("error", notify.onError(function(error) {
-            return "Message to the notifier: " + error.message;
-        }))
-        .pipe(gulp.dest('dev'));
+      }))
+      .pipe(gulp.dest('./dev/'))
+      .pipe(browserSync.stream());
 });
 
 // Browsersync
