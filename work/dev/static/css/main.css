@@ -3294,33 +3294,33 @@ input[type="submit"] {
 .consult .consult--online::before {
   background-position: 1px -143px;
 }
-.cat-reference {
+.headway {
   padding-top: 80px;
   padding-bottom: 90px;
   background: url("../img/general/bottom-line.png") no-repeat 0 100%;
   background-color: #f2f2f2;
 }
-.cat-reference header {
+.headway header {
   margin-bottom: 65px;
 }
-.cat-reference dl {
+.headway section {
   width: 820px;
   line-height: 120%;
 }
-.cat-reference dl img {
+.headway section img {
   float: left;
   width: 100px;
   height: 100px;
   border-radius: 5px;
   margin-right: 30px;
 }
-.cat-reference dl dt {
+.headway section dt {
   margin-bottom: 13px;
 }
-.cat-reference dl dd+dt {
+.headway section dd+dt {
   margin-top: 75px;
 }
-.cat-reference dl dd {
+.headway section dd {
   position: relative;
   min-height: 100px;
   margin-left: 0;
