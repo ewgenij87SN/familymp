@@ -33,7 +33,7 @@ block content
 						a(href="#" title="Путь к счастливой семье") Путь к счастливой семье
 					li
 						a(href="#" title="Как найти свою половинку") Как найти свою половинку
-				a(href="#popup" title="Связаться").btn.btn-to-order.popup-link Связаться
+				a(href="#popup" title="Связаться").btn.btn-to-order.popup-link Свяжитесь с нами:
 				#popup.mfp-hide.popup
 					form(action="кто будет обрабатывать форму" method="post")
 						.feedback-form-group
@@ -85,20 +85,17 @@ block content
 	//- 
 	//- 
 	//- ///////////////////////////////////////////	
-	.features
+	.consult
 		.container.clearfix
-			.features-item.feature-choice
-				h2 Выбор
-				p 
-					|	Ваш питомец оценит широту нашего ассортимента аксессуаров.
-			.features-item.feature-quality
-				h2 Качество
-				p 
-					|	Наши товары не сломаются на второй день. Только на третий.
-			.features-item.feature-safety
-				h2 Безопасность
-				p 
-					|	Все изготовлено из натуральных материалов, безопасных для котов.
+			.consult-item.consult--individual
+				h2 Индивидуальные консультации
+				
+			.consult-item.consult--family
+				h2 Семейные консультации
+				
+			.consult-item.consult--online
+				h2 Онлайн консультации
+				
 	//- ///////////////////////////////////////////
 	//- 
 	//- 
@@ -140,199 +137,225 @@ block content
 					img(src="static/img/general/green-light.jpg", alt="Кошкин дом")
 					p
 						|	Нужен ли кошке Кошкин дом? Свой отдельный, обособленный от пространства городской квартиры Кошкин дом? Да, нужен! Нужен особый Кошкин дом, обустроенный по ее вкусу с лесенкой, с когтеточкой, с замкнутым, своим, отдельным уголком в ее, кошкином, доме.
-	//- ///////////////////////////////////////////
-	//- 
-	//- 
-	//- 
-	//- 
-	//- 
-	//- 
-	//- 
-	//- 
-	//- 
-	//- 
-	//- 
-	//- 
-	//- 
-	//- 
-	//- 
-	//- ///////////////////////////////////////////
-	.reviews
-		.container.clearfix
-			header.clearfix
-				h2.section-title Довольные коты
-				a.btn.btn-reviews(href="#" title="Просмотреть отзывы") Все отзывы
-			.review-wrap
-				.review-item.clearfix
-					blockquote
-						p
-							|	Спасибо Кексу за давно напрашивающуюся идею! Набрал себе очков на все случаи жизни: для чтения и для вечеринки с котанами B-)
-						cite 
-							|Барсик, г. Москва
-				.review-item
-					blockquote
-						p
-							|	Я просто не могу без шоппинга и теперь не нужно тащить хозяйку в магазин, заказываю все аксессуары на сайте у Кекса он-лайн!
-						
-						cite 
-							|	Мурка, г. Санкт-Петербург
-	//- ///////////////////////////////////////////
-	//- 
-	//- 
-	//- 
-	//- 
-	//- 
-	//- 
-	//- 
-	//- 
-	//- 
-	//- 
-	//- 
-	//- 
-	//- 
-	//- 
-	//- 
-	//- ///////////////////////////////////////////
-	.popular-and-price
-		.container
-			header.clearfix
-				h2.section-title Популярные товары
-				a.btn.btn-to-catalog(href="#" title="Каталог") Каталог
-			.popular-items.clearfix
-				.catalog-item
-					img(src="static/img/general/fly.png", alt="Фото товара 1")
-					.catalog-name
-						p
-							|	Очки «Классика жанра»
-						b
-							|	300 р.
-					a.btn.btn-info(href="#" title="Описание") Описание
-					a.btn.btn-buy(href="#" title="Купить") Купить
-				.catalog-item
-					img(src="static/img/general/fly.png", alt="Фото товара 2")
-					.catalog-name
-						p
-							|	Очки «Жалюзи»
-						b
-							|	400 р.
-					a.btn.btn-info(href="#" title="Описание") Описание
-					a.btn.btn-buy(href="#" title="Купить") Купить
-				.catalog-item
-					img(src="static/img/general/fly.png", alt="Фото товара 3")
-					.catalog-name
-						p
-							|	Очки «Базилис»
-						b
-							|	500 р.
-					a.btn.btn-info(href="#" title="Описание") Описание
-					a.btn.btn-buy(href="#" title="Купить") Купить
 
-			h2.section-title.price-title Прайс-лист на услуги
-			table
-				tr
-					th.price-number №
-					th.price-title название услуги
-					th.price-master кто оказывает
-					th.price-cost сколько стоит
-				tr
-					td.price-number 1.
-					td.price-title Стрижка
-					td.price-master Грумер
-					td.price-cost 500 руб.
-				tr
-					td.price-number 2.
-					td.price-title Заточка когтей
-					td.price-master Грумер
-					td.price-cost 300 руб.
-				tr
-					td.price-number 3.
-					td.price-title Накрутка усов
-					td.price-master Грумер
-					td.price-cost 100 руб.
-				tr
-					td.price-number 4.
-					td.price-title Подбор аксессуаров
-					td.price-master Стилист
-					td.price-cost 1500 руб.
-	//- ///////////////////////////////////////////
-	//- 
-	//- 
-	//- 
-	//- 
-	//- 
-	//- 
-	//- 
-	//- 
-	//- 
-	//- 
-	//- 
-	//- 
-	//- 
-	//- 
-	//- 
-	//- ///////////////////////////////////////////
-	.feedback
-		.container
-			header.clearfix
-				h2.section-title Остались вопросы?
-				p
-					|	Свяжитесь с нами, и мы развеем оставшиеся у Вас сомнения!
-
-
-	//- ///////////////////////////////////////////
-	//- 
-	//- 
-	//- 
-	//- 
-	//- 
-	//- 
-	//- 
-	//- 
-	//- 
-	//- 
-	//- 
-	//- 
-	//- 
-	//- 
-	//- 
-	//- ///////////////////////////////////////////
-	footer
-		.container
-			.footer-top
-				img(src="static/img/general/logo-first.png", alt="Логотип")
-				a.btn.btn-to-order(href="#" title="Заказать") Заказать
-			.footer-middle.clearfix
-				.footer-nav
-					h3 Магазин
-					ul
-						li
-							a(href="#" title="Домики") Домики
-						li
-							a(href="#" title="Одежда") Одежда
-						li
-							a(href="#" title="Очки") Очки
-				.footer-nav
-					h3 Отзывы
-					ul
-						li
-							a(href="#" title="Показать") Показать
-						li
-							a(href="#" title="Оставить") Оставить
-				.footer-nav
-					h3 Прайс-лист
-					a(href="#" title="Скачать прайс") Скачать прайс
-
-			.footer-bottom
-				.footer-social
-					h3
-						|	Давайте дружить!
+	//- .headway
+	//- headway - прогресс, продвижение вперед, движение вперед, поступательное движение, успех, высота в свету
+	//- 	.container
+	//- 		header.clearfix
+	//- 			h2.section-title Путь к успеху
+	//- 			a.btn.btn-manual(href="http://familylouis.com/index.php?categoryID=614&category_slug=vybor-zhiznennogo-puti-kem-byt" title="Справочник") Справочник
+	//- 		dl
+	//- 			dt
+	//- 				h3 Окрас кошек и котов 
+	//- 					i источник: 
+	//- 						a(href="#" title="wikipedia").source wikipedia 
 				
-					a.vk.social-btn(href="#" title="Вконтакте") Вконтакте
-					a.facebook.social-btn(href="#" title="Фейсбук") Фейсбук
-					a.instagram.social-btn(href="#" title="Инстаграм") Инстаграм
-				p
-					|	С 
-					span  
-					|	для HTML Academy
+	//- 			dd
+	//- 				img(src="static/img/general/forest.jpg", alt="Окрас кошек и котов")
+	//- 				p
+	//- 					|	Окрас шерсти, кожи и глаз кошки обусловлен присутствием в них пигмента меланина. Меланин находится в теле волоса в виде микроскопических гранул, которые различаются по форме, размеру и количеству, что и вызывает различия в окрасе.
+	//- 			dt 
+	//- 				h3 Кошкин дом 
+	//- 					i источник: 
+	//- 						a(href="#" title="kotmur").source kotmur.spb.ru 
+				
+	//- 			dd
+	//- 				img(src="static/img/general/green-light.jpg", alt="Кошкин дом")
+	//- 				p
+	//- 					|	Нужен ли кошке Кошкин дом? Свой отдельный, обособленный от пространства городской квартиры Кошкин дом? Да, нужен! Нужен особый Кошкин дом, обустроенный по ее вкусу с лесенкой, с когтеточкой, с замкнутым, своим, отдельным уголком в ее, кошкином, доме.
+	//- ///////////////////////////////////////////
+	//- 
+	//- 
+	//- 
+	//- 
+	//- 
+	//- 
+	//- 
+	//- 
+	//- 
+	//- 
+	//- 
+	//- 
+	//- 
+	//- 
+	//- 
+	//- ///////////////////////////////////////////
+	//- .reviews
+	//- 	.container.clearfix
+	//- 		header.clearfix
+	//- 			h2.section-title Довольные коты
+	//- 			a.btn.btn-reviews(href="#" title="Просмотреть отзывы") Все отзывы
+	//- 		.review-wrap
+	//- 			.review-item.clearfix
+	//- 				blockquote
+	//- 					p
+	//- 						|	Спасибо Кексу за давно напрашивающуюся идею! Набрал себе очков на все случаи жизни: для чтения и для вечеринки с котанами B-)
+	//- 					cite 
+	//- 						|Барсик, г. Москва
+	//- 			.review-item
+	//- 				blockquote
+	//- 					p
+	//- 						|	Я просто не могу без шоппинга и теперь не нужно тащить хозяйку в магазин, заказываю все аксессуары на сайте у Кекса он-лайн!
+						
+	//- 					cite 
+	//- 						|	Мурка, г. Санкт-Петербург
+	//- ///////////////////////////////////////////
+	//- 
+	//- 
+	//- 
+	//- 
+	//- 
+	//- 
+	//- 
+	//- 
+	//- 
+	//- 
+	//- 
+	//- 
+	//- 
+	//- 
+	//- 
+	//- ///////////////////////////////////////////
+	//- .popular-and-price
+	//- 	.container
+	//- 		header.clearfix
+	//- 			h2.section-title Популярные товары
+	//- 			a.btn.btn-to-catalog(href="#" title="Каталог") Каталог
+	//- 		.popular-items.clearfix
+	//- 			.catalog-item
+	//- 				img(src="static/img/general/fly.png", alt="Фото товара 1")
+	//- 				.catalog-name
+	//- 					p
+	//- 						|	Очки «Классика жанра»
+	//- 					b
+	//- 						|	300 р.
+	//- 				a.btn.btn-info(href="#" title="Описание") Описание
+	//- 				a.btn.btn-buy(href="#" title="Купить") Купить
+	//- 			.catalog-item
+	//- 				img(src="static/img/general/fly.png", alt="Фото товара 2")
+	//- 				.catalog-name
+	//- 					p
+	//- 						|	Очки «Жалюзи»
+	//- 					b
+	//- 						|	400 р.
+	//- 				a.btn.btn-info(href="#" title="Описание") Описание
+	//- 				a.btn.btn-buy(href="#" title="Купить") Купить
+	//- 			.catalog-item
+	//- 				img(src="static/img/general/fly.png", alt="Фото товара 3")
+	//- 				.catalog-name
+	//- 					p
+	//- 						|	Очки «Базилис»
+	//- 					b
+	//- 						|	500 р.
+	//- 				a.btn.btn-info(href="#" title="Описание") Описание
+	//- 				a.btn.btn-buy(href="#" title="Купить") Купить
+
+	//- 		h2.section-title.price-title Прайс-лист на услуги
+	//- 		table
+	//- 			tr
+	//- 				th.price-number №
+	//- 				th.price-title название услуги
+	//- 				th.price-master кто оказывает
+	//- 				th.price-cost сколько стоит
+	//- 			tr
+	//- 				td.price-number 1.
+	//- 				td.price-title Стрижка
+	//- 				td.price-master Грумер
+	//- 				td.price-cost 500 руб.
+	//- 			tr
+	//- 				td.price-number 2.
+	//- 				td.price-title Заточка когтей
+	//- 				td.price-master Грумер
+	//- 				td.price-cost 300 руб.
+	//- 			tr
+	//- 				td.price-number 3.
+	//- 				td.price-title Накрутка усов
+	//- 				td.price-master Грумер
+	//- 				td.price-cost 100 руб.
+	//- 			tr
+	//- 				td.price-number 4.
+	//- 				td.price-title Подбор аксессуаров
+	//- 				td.price-master Стилист
+	//- 				td.price-cost 1500 руб.
+	//- ///////////////////////////////////////////
+	//- 
+	//- 
+	//- 
+	//- 
+	//- 
+	//- 
+	//- 
+	//- 
+	//- 
+	//- 
+	//- 
+	//- 
+	//- 
+	//- 
+	//- 
+	//- ///////////////////////////////////////////
+	//- .feedback
+	//- 	.container
+	//- 		header.clearfix
+	//- 			h2.section-title Остались вопросы?
+	//- 			p
+	//- 				|	Свяжитесь с нами, и мы развеем оставшиеся у Вас сомнения!
+
+
+	//- ///////////////////////////////////////////
+	//- 
+	//- 
+	//- 
+	//- 
+	//- 
+	//- 
+	//- 
+	//- 
+	//- 
+	//- 
+	//- 
+	//- 
+	//- 
+	//- 
+	//- 
+	//- ///////////////////////////////////////////
+	//- footer
+	//- 	.container
+	//- 		.footer-top
+	//- 			img(src="static/img/general/logo-first.png", alt="Логотип")
+	//- 			a.btn.btn-to-order(href="#" title="Заказать") Заказать
+	//- 		.footer-middle.clearfix
+	//- 			.footer-nav
+	//- 				h3 Магазин
+	//- 				ul
+	//- 					li
+	//- 						a(href="#" title="Домики") Домики
+	//- 					li
+	//- 						a(href="#" title="Одежда") Одежда
+	//- 					li
+	//- 						a(href="#" title="Очки") Очки
+	//- 			.footer-nav
+	//- 				h3 Отзывы
+	//- 				ul
+	//- 					li
+	//- 						a(href="#" title="Показать") Показать
+	//- 					li
+	//- 						a(href="#" title="Оставить") Оставить
+	//- 			.footer-nav
+	//- 				h3 Прайс-лист
+	//- 				a(href="#" title="Скачать прайс") Скачать прайс
+
+	//- 		.footer-bottom
+	//- 			.footer-social
+	//- 				h3
+	//- 					|	Давайте дружить!
+				
+	//- 				a.vk.social-btn(href="#" title="Вконтакте") Вконтакте
+	//- 				a.facebook.social-btn(href="#" title="Фейсбук") Фейсбук
+	//- 				a.instagram.social-btn(href="#" title="Инстаграм") Инстаграм
+	//- 			p
+	//- 				|	С 
+	//- 				span  
+	//- 				|	для HTML Academy
 
 	

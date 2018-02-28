@@ -459,7 +459,7 @@ template {
 [hidden] {
   display: none;
 }
-/* Magnific Popup CSS */
+/*. Magnific Popup CSS */
 .mfp-bg {
   top: 0;
   left: 0;
@@ -2974,7 +2974,7 @@ html {
   font-size: 16px;
 }
 body {
-  background-color: #add8e6;
+  background-color: #000;
   min-width: 1040px;
 }
 h1,
@@ -3208,8 +3208,7 @@ input[type="submit"] {
 .page-header {
   background-color: #363636;
   color: #c3c3c3;
-  background: url("../img/general/header-bg.jpg") no-repeat 50% 50%;
-  background-size: cover;
+  background: -moz-linear-gradient(left, #000, transparent 20%), url("../img/general/header-bg.jpg") no-repeat 50% 50%;
   height: 100vh;
 }
 .page-header .header-top {
@@ -3255,14 +3254,14 @@ input[type="submit"] {
   text-transform: none;
   padding-right: 450px;
 }
-.features {
+.consult {
   padding-top: 140px;
   padding-bottom: 162px;
   background: url("../img/general/top-line.png") no-repeat, url("../img/general/bottom-line.png") no-repeat 0 100%;
   background-color: #fff;
   background-size: container;
 }
-.features .features-item {
+.consult .consult-item {
   width: 335px;
   min-height: 180px;
   border-right: 1px solid #808080;
@@ -3271,13 +3270,13 @@ input[type="submit"] {
   text-align: center;
   position: relative;
 }
-.features .features-item h2 {
+.consult .consult-item h2 {
   padding-bottom: 30px;
 }
-.features .features-item:last-of-type {
+.consult .consult-item:last-of-type {
   border: none;
 }
-.features .features-item::before {
+.consult .consult-item::before {
   content: "";
   position: absolute;
   width: 65px;
@@ -3286,13 +3285,13 @@ input[type="submit"] {
   top: 0;
   left: 137px;
 }
-.features .feature-choice::before {
+.consult .consult--individual::before {
   background-position: -5px -5px;
 }
-.features .feature-quality::before {
+.consult .consult--family::before {
   background-position: -5px -76px;
 }
-.features .feature-safety::before {
+.consult .consult--online::before {
   background-position: 1px -143px;
 }
 .cat-reference {
