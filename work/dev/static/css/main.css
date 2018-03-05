@@ -3224,8 +3224,7 @@ input[type="submit"] {
 .headway {
   padding-top: 80px;
   padding-bottom: 90px;
-  background: url("../img/general/bottom-line.png") no-repeat 0 100%;
-  background-color: #f2f2f2;
+  background: url("../img/general/bottom-line.png") no-repeat 0 100%, #e9fae2;
 }
 .headway header {
   margin-bottom: 65px;
@@ -3235,16 +3234,25 @@ input[type="submit"] {
   line-height: 120%;
 }
 .wayup {
+  width: 70%;
+  margin: auto;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 .wayup-item {
-  padding: 20px;
+  padding: 15px 30px;
+  min-width: 150px;
+  margin-left: auto;
+  text-align: center;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-color
-  background-color: #fff;
+  color: #fff;
+  background-color: #66a900;
+  border-bottom: 4px solid #ccc;
+  border-radius: -15px;
 }
 .reviews {
   padding-top: 80px;
