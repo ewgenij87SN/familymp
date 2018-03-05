@@ -2875,107 +2875,20 @@ img.mfp-img {
     color: black;
 }
 
+html {
+  font-size: 16px;
+}
+body {
+  font-family: "PT Serif", serif;
+  background-color: #000;
+  min-width: 1040px;
+}
 a {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
   font-size: 18px;
-}
-.section-title {
-  font-family: "Georgia", serif;
-  color: #a38b70;
-  font-size: 45px;
-  width: 650px;
-  float: left;
-}
-h3 {
-  font-family: "Georgia", serif;
-  color: #a38b70;
-  font-size: 24px;
-}
-.features h2 {
-  font-family: "Georgia", serif;
-  color: #a38b70;
-  font-size: 30px;
-}
-.features p {
-  font-size: 16px;
-  line-height: 24px;
-}
-.cat-reference h3 {
-  font-family: "Arial", sans-serif;
-  color: #000;
-}
-.cat-reference i {
-  font-style: italic;
-  font-size: 16px;
-  font-weight: normal;
-}
-.cat-reference a.source {
-  font-size: 16px;
-  font-weight: normal;
-  color: #a38b70;
-  text-transform: none;
-  position: relative;
-}
-.cat-reference a.source::after {
-  content: "";
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  top: 0;
-  right: -8px;
-  background: url("../img/general/sprite.png") no-repeat -5px -210px;
-}
-.cat-reference dd {
-  font: 18px;
-  line-height: 24px;
-}
-cite {
-  font-weight: bold;
-  font-style: italic;
-}
-.catalog-name p {
-  font-weight: bold;
-}
-.catalog-name b {
-  font-weight: normal;
-}
-.reviews p {
-  line-height: 24px;
-}
-.popular-and-price th {
-  font-weight: normal;
-  font-size: 14px;
-}
-.popular-and-price td {
-  font-size: 18px;
-}
-.popular-and-price td.price-title {
-  font-weight: bold;
-}
-.feedback label {
-  text-transform: uppercase;
-}
-.feedback label[for="subscribe"] {
-  text-transform: none;
-}
-.footer-middle a {
-  text-transform: none;
-}
-.footer-bottom li a {
-  font-size: 0;
-}
-.footer-bottom p {
-  font-size: 18px/24px;
-  color: #fff;
-}
-html {
-  font-size: 16px;
-}
-body {
-  background-color: #000;
-  min-width: 1040px;
+  font-family: "Montserrat", sans-serif;
 }
 h1,
 h2,
@@ -2984,6 +2897,8 @@ h4,
 h5,
 h6 {
   margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
 }
 ul,
 li {
@@ -3243,16 +3158,25 @@ input[type="submit"] {
   border-bottom: 2px solid rgba(255,255,255,0.4);
 }
 .page-header .promo {
+  width: 35%;
+  margin-left: 10%;
+}
+.page-header .promo a {
   display: inline-block;
-  text-align: center;
-  margin: 0 auto;
   font-size: 4em;
-  font-family: "Arial", sans-serif;
-  font-weight: bold;
-  line-height: 120%;
+  text-align: center;
+  font-weight: 800;
   margin-top: 10vh;
-  text-transform: none;
-  padding-right: 450px;
+  text-transform: uppercase;
+}
+.page-header .promo p {
+  display: inline-block;
+  font-family: "PT Sans", serif;
+  font-style: italic;
+  color: #fff;
+  font-size: 2em;
+  text-align: center;
+  box-sizing: content-box;
 }
 .consult {
   padding-top: 140px;

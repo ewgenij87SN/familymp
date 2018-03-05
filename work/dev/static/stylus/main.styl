@@ -5,7 +5,7 @@
 @import '_vars.styl'
 
 //ШРИФТОВЫЕ Стили
-@import '_font.styl'
+// @import '_font.styl'
 
 // Подключаем спрайты (просто раскоментируем импорт при появлении PNG спрайтов)
 // @import '_sprite.styl'
@@ -19,12 +19,22 @@ html
 
 body
   // font-family "mainFont"
+  font-family "PT Serif", serif
   background-color black
   min-width 1040px
 
+a
+  text-decoration none
+  color white
+  text-transform uppercase 
+  font-size 18px
+  font-family "Montserrat", sans-serif 
+   
 
 h1,h2,h3,h4,h5,h6
   margin 0
+  font-family "Montserrat", sans-serif
+  font-weight 600
 
 ul,li
   margin 0
@@ -333,21 +343,31 @@ input[type="submit"]
           &:active
             color rgba(255, 255, 255, .4)
             border-bottom 2px solid rgba(255, 255, 255, .4)
-  .promo
+  .promo 
+    width 35% 
+    margin-left 10%
+    // position relative
+    
+  .promo a
     display inline-block
-    text-align center
-    // width 80% 
-    margin 0 auto
+   
     font-size 4em
-    font-family "Arial", sans-serif
-    font-weight bold
-    line-height 120%
+    text-align center
+    font-weight 800
+    
     margin-top 10vh
-    text-transform none
-    padding-right 450px
+    text-transform uppercase
     
-
+  
+  .promo p
+    display inline-block
+    font-family "PT Sans", serif
+    font-style italic
+    color #FFF 
+    font-size 2em
+    text-align center
     
+    box-sizing content-box
 //- ///////////////////////////////////////////
 //- 
 //- 
