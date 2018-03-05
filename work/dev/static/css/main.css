@@ -3222,37 +3222,45 @@ input[type="submit"] {
   background-position: 1px -143px;
 }
 .headway {
-  padding-top: 80px;
   padding-bottom: 90px;
-  background: url("../img/general/bottom-line.png") no-repeat 0 100%, #e9fae2;
+  background: url("../img/general/bottom-line.png") no-repeat 0 100%, #fff;
 }
 .headway header {
   margin-bottom: 65px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding-top: 70px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .headway section {
-  width: 820px;
   line-height: 120%;
 }
 .wayup {
-  width: 70%;
-  margin: auto;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-bottom: 60px;
 }
 .wayup-item {
-  padding: 15px 30px;
-  min-width: 150px;
-  margin-left: auto;
+  padding: 10px 30px;
+  margin-left: 15px;
+  margin-right: 15px;
   text-align: center;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   color: #fff;
-  background-color: #66a900;
-  border-bottom: 4px solid #ccc;
-  border-radius: -15px;
+  background: linear-gradient(to top, #179207 0%, #18a900 74%, #35e328 100%);
+  border-radius: 20px;
+}
+.wayup-arrow {
+  min-width: 30px;
+  background: url("../img/general/arrow.png") no-repeat 50% 50%;
+  background-size: contain;
 }
 .reviews {
   padding-top: 80px;
