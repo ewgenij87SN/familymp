@@ -20,21 +20,22 @@ html
 body
   // font-family "mainFont"
   font-family "PT Serif", serif
-  background-color black
-  min-width 1040px
+  font-size 1em
+  background-color rgba(0, 0, 0, .1)
+  // min-width 1040px
 
 a
   text-decoration none
   color white
   text-transform uppercase 
-  font-size 18px
+  font-size 1em
   font-family "Montserrat", sans-serif 
    
 
 h1,h2,h3,h4,h5,h6
   margin 0
   font-family "Montserrat", sans-serif
-  font-weight 600
+  font-weight 900
 
 ul,li
   margin 0
@@ -95,7 +96,7 @@ button
   *zoom: 1;
 
 .container
-  width 100%
+  // width 100%
   max-width 1020px
   margin 0 auto
   
@@ -152,7 +153,6 @@ button
   
   
 .btn-to-order
-  margin-top 6px
   border 2px solid #fff
   &:hover
     color #404040
@@ -202,19 +202,9 @@ button
 //- ///////////////////////////////////////////
 //- 
 //- 
-//- 
-//- 
-//- 
-//- 
-//- 
-//- 
-//- 
-//- 
-//- 
-//- 
-//- 
-//- 
 //- POPUP
+//- 
+//- 
 //- ///////////////////////////////////////////
 .popup 
   background-color #FFF 
@@ -293,18 +283,7 @@ input[type="submit"]
   border none
 //- ///////////////////////////////////////////
 //- 
-//- 
-//- 
-//- 
-//- 
-//- 
-//- 
-//- 
-//- 
-//- 
-//- 
-//- 
-//- 
+//- page-header
 //- 
 //- 
 //- ///////////////////////////////////////////
@@ -314,113 +293,67 @@ input[type="submit"]
   background -moz-linear-gradient(left, black, transparent 20%), 
   url("../img/general/header-bg.jpg") no-repeat 50% 50%
             
-  // background-size cover 
+  background-size cover 
   height 100vh
-   
+
+.vert 
+  display flex
+  -webkit-flex-direction column
+  -ms-flex-direction column
+  flex-direction column
+  justify-content space-between
+   justify-content: space-around
+
+.header-top
+  padding-top 40px
+  display flex
+  -webkit-justify-content space-between
+  justify-content space-between
+  ul
+    display flex
+    -webkit-align-items center
+    align-items center
+    li
+      margin-right 40px
+      &:last-of-type
+        margin-right 60px
+      a
+        
+        &:hover
+          border-bottom 2px solid #fff 
+        &:active
+          color rgba(255, 255, 255, .4)
+          border-bottom 2px solid rgba(255, 255, 255, .4)
+
+.promo 
+  width 30%
+  min-height 100%
+  display flex
+  -webkit-flex-direction column
+  -ms-flex-direction column
+  flex-direction column
+  -webkit-align-items center
+  align-items center
+
+.promo p
+  font-family "PT Sans"
+  font-style italic
+  color #FFF 
+  font-size 1em
+
+.promo h1
+  font-size 2em
+  text-align center
   
-  .header-top
-    position relative
-    padding-top 40px
-    
-    img 
-      width 205px
-      height 55px
-      float left
-    
-    ul
-      width 345px
-      margin-left 125px
-      float left
-      li
-        display inline-block
-        margin-right 40px
-        &:last-of-type
-          margin-right 0
-        a
-          line-height 55px
-          &:hover
-            border-bottom 2px solid #fff 
-          &:active
-            color rgba(255, 255, 255, .4)
-            border-bottom 2px solid rgba(255, 255, 255, .4)
-  .promo 
-    width 35% 
-    margin-left 10%
-    // position relative
-    
-  .promo a
-    display inline-block
-   
-    font-size 4em
-    text-align center
-    font-weight 800
-    
-    margin-top 10vh
-    text-transform uppercase
-    
-  
-  .promo p
-    display inline-block
-    font-family "PT Sans", serif
-    font-style italic
-    color #FFF 
-    font-size 2em
-    text-align center
-    
-    box-sizing content-box
+  // box-sizing content-box
 //- ///////////////////////////////////////////
 //- 
 //- 
+//- ВИДЫ КОНСУЛЬТАЦИЙ
 //- 
 //- 
-//- 
-//- 
-//- 
-//- 
-//- 
-//- 
-//- 
-//- 
-//- 
-//- 
-//- ПРЕИМУЩЕСТВА FEATURES
 //- ///////////////////////////////////////////
-// .features
-//   padding-top 140px
-//   padding-bottom 162px 
-//   background url('../img/general/top-line.png') no-repeat,
-//              url('../img/general/bottom-line.png') no-repeat 0 100%
-//   background-color #FFF
-//   background-size container
-  
-//   .features-item
-//     width 335px
-//     min-height 180px
-//     border-right 1px solid gray
-//     display inline-block
-//     padding 90px 30px 0px
-//     text-align center
-//     position relative
-//     h2
-//       padding-bottom 30px
-//     &:last-of-type
-//       border none 
-    
-//     &::before
-//       content ""
-//       position absolute
-//       width 65px
-//       height 65px
-//       background url("../img/general/sprite.png") no-repeat
-//       top 0
-//       left 137px
-  
-//   .feature-choice::before
-//     background-position -5px -5px
-//   .feature-quality::before
-//     background-position -5px -76px 
-//   .feature-safety::before
-//     background-position 1px -143px    
+
     
 
 .consult
@@ -431,112 +364,64 @@ input[type="submit"]
   background-color #FFF
   background-size container
   
-  .consult-item
-    width 335px
-    min-height 180px
-    border-right 1px solid gray
-    display inline-block
-    padding 90px 30px 0px
-    text-align center
-    position relative
-    h2
-      padding-bottom 30px
-    &:last-of-type
-      border none 
-    
-    &::before
-      content ""
-      position absolute
-      width 65px
-      height 65px
-      background url("../img/general/sprite.png") no-repeat
-      top 0
-      left 137px
+.consult-item
+  width 335px
+  min-height 180px
+  border-right 1px solid gray
+  display inline-block
+  padding 90px 30px 0px
+  text-align center
+  position relative
+  h2
+    padding-bottom 30px
+  &:last-of-type
+    border none 
   
-  .consult--individual::before
-    background-position -5px -5px
-  .consult--family::before
-    background-position -5px -76px 
-  .consult--online::before
-    background-position 1px -143px    
-//- ///////////////////////////////////////////
-  //- 
-  //- 
-  //- 
-  //- 
-  //- 
-  //- 
-  //- 
-  //- 
-  //- 
-  //- 
-  //- 
-  //- 
-  //- 
-  //- 
-  //- CAT-REFERENCE НЕМНОГО ТЕОРИИ
+  &::before
+    content ""
+    position absolute
+    width 65px
+    height 65px
+    background url("../img/general/sprite.png") no-repeat
+    top 0
+    left 137px
+
+.consult--individual::before
+  background-position -5px -5px
+.consult--family::before
+  background-position -5px -76px 
+.consult--online::before
+  background-position 1px -143px    
   //- ///////////////////////////////////////////
-  .headway
-    padding-top 80px
-    padding-bottom 90px
-    background url('../img/general/bottom-line.png') no-repeat 0 100%
-    background-color #f2f2f2
-     
-    header
-      margin-bottom 65px      
-    
-    section 
-      width 820px
-      line-height 120%
+  //- 
+  //- 
+  //- ПУТЬ К УСПЕХУ
+  //- 
+  //- 
+  //- ///////////////////////////////////////////
+.headway
+  padding-top 80px
+  padding-bottom 90px
+  background url('../img/general/bottom-line.png') no-repeat 0 100%
+  background-color #f2f2f2
+   
+  header
+    margin-bottom 65px      
+  
+  section 
+    width 820px
+    line-height 120%
       
-      img 
-        float left
-        width 100px
-        height 100px
-        border-radius 5px
-        margin-right 30px
-        
-      dt 
-        margin-bottom 13px
-        
-      dd+dt
-        margin-top 75px
-      dd
-        position relative
-        min-height 100px
-        margin-left 0
-  // .cat-reference
-  //   padding-top 80px
-  //   padding-bottom 90px
-  //   background url('../img/general/bottom-line.png') no-repeat 0 100%
-    
-  //   // border-top 10px dotted #fff
-  //   background-color #f2f2f2
-     
-  //   header
-  //     margin-bottom 65px      
-    
-  //   dl 
-  //     width 820px
-  //     line-height 120%
-      
-  //     img 
-  //       float left
-  //       width 100px
-  //       height 100px
-  //       border-radius 5px
-  //       margin-right 30px
-        
-  //     dt 
-  //       margin-bottom 13px
-        
-  //     dd+dt
-  //       margin-top 75px
-  //     dd
-  //       position relative
-  //       min-height 100px
-  //       margin-left 0
-      
+.wayup
+  display flex
+  
+.wayup-item
+  padding 20px
+  font-family "Montserrat", sans-serif
+  font-weight 700
+  text-transform uppercase
+  color 
+  background-color #FFF  
 //- ///////////////////////////////////////////
 //- 
 //- 
@@ -547,7 +432,7 @@ input[type="submit"]
 //- 
 //- 
 //- 
-//- 
+//-   
 //- 
 //- 
 //- 
