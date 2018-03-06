@@ -28,8 +28,9 @@ a
   text-decoration none
   color white
   text-transform uppercase 
-  font-size 1em
-  font-family "Montserrat", sans-serif 
+  font-size .7em
+  font-family "Montserrat", sans-serif
+  font-weight 600 
    
 
 h1,h2,h3,h4,h5,h6
@@ -145,16 +146,20 @@ button
 
 .btn
   min-width 170px
-  border 2px solid #a38b70
+  box-shadow 0 0 10px tegre
+  background-color tegre 
   display inline-block
   padding 12px
+  border 1px solid rgba(0, 0, 0, .3)
   text-align center
-  float right 
+  // float right 
   border-radius 3px
+
   
   
 .btn-to-order
   border 2px solid #fff
+  transition .4 ease-in
   &:hover
     color #404040
     background-color #fff
@@ -162,43 +167,43 @@ button
     color #d2d2d2
     background-color #fff 
 
-.btn-reviews, .btn-manual, .btn-to-catalog
-  color #a38b70
-  border-color #a38b70
-  &:hover
-    background-color: #8d745a
-    color #fff
-    border-color #8d745a
-  &:active
-    color rgba(255, 255, 255, .3) 
+// .btn-reviews, .btn-manual, .btn-to-catalog
+//   color #a38b70
+//   border-color #a38b70
+//   &:hover
+//     background-color: #8d745a
+//     color #fff
+//     border-color #8d745a
+//   &:active
+//     color rgba(255, 255, 255, .3) 
 
-.btn-info, .btn-buy
-  background-color: #a38b70
-  min-width 125px
-  margin-top 27px
-  border none
-  &:hover
-    background-color: #8d745a
-  &:active
-    color rgba(255, 255, 255, .3) 
+// .btn-info, .btn-buy
+//   background-color: #a38b70
+//   min-width 125px
+//   margin-top 27px
+//   border none
+//   &:hover
+//     background-color: #8d745a
+//   &:active
+//     color rgba(255, 255, 255, .3) 
     
-.btn-info
-  float left
-  margin-left 20px
-.btn-buy
-  float right
-  margin-right 20px
+// .btn-info
+//   float left
+//   margin-left 20px
+// .btn-buy
+//   float right
+//   margin-right 20px
 
-.btn-submit
-  background-color: #a38b71
-  width 140px
-  margin-top 27px
-  color #fff
-  border none
-  &:hover
-    background-color: #8d745a
-  &:active
-    color rgba(255, 255, 255, .3) 
+// .btn-submit
+//   background-color: #a38b71
+//   width 140px
+//   margin-top 27px
+//   color #fff
+//   border none
+//   &:hover
+//     background-color: #8d745a
+//   &:active
+//     color rgba(255, 255, 255, .3) 
 //- ///////////////////////////////////////////
 //- 
 //- 
@@ -208,7 +213,7 @@ button
     .section-title
       font-weight 800
       font-size 2.5em
-      color tblac 
+      color rgba(0,0,0,0.7)
       
       span
         color tegre
@@ -374,7 +379,7 @@ input[type="submit"]
   background url('../img/general/top-line.png') no-repeat,
              url('../img/general/bottom-line.png') no-repeat 0 100%
   background-color #FFF
-  background-size container
+  background-size contain
   
 .consult-item
   width 335px
@@ -412,20 +417,25 @@ input[type="submit"]
   //- 
   //- ///////////////////////////////////////////
 .headway
-  padding-bottom 190px
+  padding-bottom 200px
   background url('../img/general/bottom-line.png') no-repeat 0 100%
-  // , #efffff 
- 
+  -webkit-background-size contain 
+  -o-background-size contain 
+  background-size contain 
+  padding-top 100px
+  // background-color rgba(0,0,0, .05) 
   header
-    margin-bottom 65px
+    margin-bottom 80px
     display flex
     -webkit-justify-content space-between
     justify-content space-between
-    padding-top 70px
+    
     padding-left 10px
     padding-right 10px
     font-weight 600 
-      
+.headway a
+  &:first-of-type
+    line-height 150%      
 .wayup
   display flex
   justify-content space-between
@@ -441,7 +451,7 @@ input[type="submit"]
   font-size .7em
   text-transform uppercase
   color #fff
-  background linear-gradient(to top, rgb(23,146,7) 0%, rgb(24,169,0) 74%, rgb(53,227,40) 100%)
+  background linear-gradient(to top, tegre 0%, tegre 74%, #7DCF00 100%)
   -webkit-border-radius 20px 
   border-radius 20px
 
@@ -451,24 +461,23 @@ input[type="submit"]
   background-size contain
 
 .headway-section
-  // background-color #EFFFFF 
   line-height 120%
   display flex
   -webkit-flex-direction column
   -ms-flex-direction column
   flex-direction column
-  // justify-content space-between
 
 .headway-item
-
-     
+  border-bottom 5px solid tegre
+  box-shadow 0 0 10px rgba(0,0,0,0.3)
+  padding 20px
+  margin-top 70px
+  margin-bottom 70px
+   
 .headway-item__1
   display flex
   -webkit-align-items center 
-  align-items center 
-  padding-top 70px
-  padding-bottom 70px
-  border-bottom 5px solid tegre
+  align-items center   
 .headway-item__1 p 
     align-self center
     -moz-hyphens: auto;
@@ -476,45 +485,69 @@ input[type="submit"]
     -ms-hyphens: auto;
     font-style italic 
     font-size 1.1em
-    line-height 1.3em 
-  
+    line-height 1.3em  
 .headway-item__1 ul 
-    margin-left 80px
-    width 70%
-    li
-      padding-left 10px
-      // border-bottom 1px dashed tegre
-      // border-left 1px dashed tegre
-      // border-top 1px dashed tegre
-      margin-bottom 15px
-      .fa-check-square 
-        color tegre 
-      
+  margin-left 80px
+  width 70%
+  li
+    padding-left 10px
+    margin-bottom 15px
+    .fa-check-square 
+      color tegre 
   
 .headway-item__2
   display flex
   -webkit-flex-direction column
   -ms-flex-direction column
   flex-direction column
-  padding 20px
-  padding-top 50px
-  border-bottom none
+  margin-top 0
 .headway-item__2 p
   font-style italic
   font-size 1.1em
   line-height 1.3em 
 .headway-item__2 ul 
-  padding-top 60px 
-  padding-bottom 30px 
+  padding-top 30px
+  position relative
+  &:after
+      content ""
+      position absolute
+      top -35px
+      right -55px
+      width 12em
+      height 12em
+      background url("../img/general/headway1.png") no-repeat 50% 50%
+      -webkit-background-size contain 
+      -o-background-size contain 
+      background-size contain 
   li
-    margin-bottom 15px
+    display inline-block
+    margin-bottom 25px
     padding 5px
-    border-bottom 1px solid rgb(53,227,40)
+    padding-left 45px
+    padding-right 15px
+    border-top 1px solid rgb(53,227,40)
     border-left 1px solid rgb(53,227,40)
-    border-radius 10px
+    border-right 1px solid rgb(53,227,40)
+    border-bottom 1px solid rgb(53,227,40)
+    border-radius 0 10px 10px 0
+    position relative
+    background-color rgba(255, 255, 255, .7)
+    z-index 999
+    &:before
+      content "\f067"
+      font-family FontAwesome
+      position absolute
+      color tegre 
 
+      left 5px
+      font-size 1.5em 
 
-  
+.headway
+  .container
+    .btn
+      display table
+      margin 0 auto
+      
 //- ///////////////////////////////////////////
 //- 
 //- 
