@@ -20,9 +20,9 @@ html
 body
   // font-family "mainFont"
   font-family "PT Serif", serif
-  font-size 1em
-  background-color rgba(0, 0, 0, .1)
-  // min-width 1040px
+  font-size 1.5em
+  color tbltr
+  
 
 a
   text-decoration none
@@ -36,6 +36,7 @@ h1,h2,h3,h4,h5,h6
   margin 0
   font-family "Montserrat", sans-serif
   font-weight 900
+  color tblac
 
 ul,li
   margin 0
@@ -198,7 +199,19 @@ button
     background-color: #8d745a
   &:active
     color rgba(255, 255, 255, .3) 
-
+//- ///////////////////////////////////////////
+//- 
+//- 
+//- ОБЩИЕ СТИЛИ
+//- 
+//- ///////////////////////////////////////////
+    .section-title
+      font-weight 800
+      font-size 2.5em
+      color tblac 
+      
+      span
+        color tegre
 //- ///////////////////////////////////////////
 //- 
 //- 
@@ -290,9 +303,8 @@ input[type="submit"]
 .page-header
   background-color #363636
   color #c3c3c3 
-  background -moz-linear-gradient(left, black, transparent 20%), 
-  url("../img/general/header-bg.jpg") no-repeat 50% 50%
-            
+  background url("../img/general/header-bg.jpg") no-repeat 50% 50%
+  // -moz-linear-gradient(left, black, transparent 20%), 
   background-size cover 
   height 100vh
 
@@ -400,12 +412,10 @@ input[type="submit"]
   //- 
   //- ///////////////////////////////////////////
 .headway
-  padding-bottom 90px
-  background url('../img/general/bottom-line.png') no-repeat 0 100%, #Fff 
-  
-  
-  
-   
+  padding-bottom 190px
+  background url('../img/general/bottom-line.png') no-repeat 0 100%
+  // , #efffff 
+ 
   header
     margin-bottom 65px
     display flex
@@ -414,27 +424,21 @@ input[type="submit"]
     padding-top 70px
     padding-left 10px
     padding-right 10px
-
-  
-  section 
-
-    line-height 120%
+    font-weight 600 
       
 .wayup
-  // width 90%
   display flex
-  justify-content center
-  margin-bottom 60px
+  justify-content space-between
   
   
 .wayup-item
   padding 10px 30px
-  // min-width 170px
   margin-left 15px
   margin-right 15px
   text-align center
   font-family "Montserrat", sans-serif
   font-weight 700
+  font-size .7em
   text-transform uppercase
   color #fff
   background linear-gradient(to top, rgb(23,146,7) 0%, rgb(24,169,0) 74%, rgb(53,227,40) 100%)
@@ -445,9 +449,71 @@ input[type="submit"]
   min-width 30px 
   background url('../img/general/arrow.png') no-repeat 50% 50%
   background-size contain
-   
+
+.headway-section
+  // background-color #EFFFFF 
+  line-height 120%
+  display flex
+  -webkit-flex-direction column
+  -ms-flex-direction column
+  flex-direction column
+  // justify-content space-between
+
+.headway-item
+
+     
+.headway-item__1
+  display flex
+  -webkit-align-items center 
+  align-items center 
+  padding-top 70px
+  padding-bottom 70px
+  border-bottom 5px solid tegre
+.headway-item__1 p 
+    align-self center
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    font-style italic 
+    font-size 1.1em
+    line-height 1.3em 
   
+.headway-item__1 ul 
+    margin-left 80px
+    width 70%
+    li
+      padding-left 10px
+      // border-bottom 1px dashed tegre
+      // border-left 1px dashed tegre
+      // border-top 1px dashed tegre
+      margin-bottom 15px
+      .fa-check-square 
+        color tegre 
+      
   
+.headway-item__2
+  display flex
+  -webkit-flex-direction column
+  -ms-flex-direction column
+  flex-direction column
+  padding 20px
+  padding-top 50px
+  border-bottom none
+.headway-item__2 p
+  font-style italic
+  font-size 1.1em
+  line-height 1.3em 
+.headway-item__2 ul 
+  padding-top 60px 
+  padding-bottom 30px 
+  li
+    margin-bottom 15px
+    padding 5px
+    border-bottom 1px solid rgb(53,227,40)
+    border-left 1px solid rgb(53,227,40)
+    border-radius 10px
+
+
   
 //- ///////////////////////////////////////////
 //- 
