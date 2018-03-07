@@ -72,10 +72,17 @@ $('.wayup-arrow__2').ready(function () {
 $('.wayup-arrow__3').ready(function () {
   $(this).addClass('magictime tinLeftIn');
   setTimeout(function(){
-  	$('.wayup-arrow__3').addClass('magictime tinLeftIn');
+    $('.wayup-arrow__3').addClass('magictime tinLeftIn');
 }, 3000);
   setInterval(function(){ 
-	$('.wayup-arrow__3').toggleClass('magictime tinLeftIn');
+  $('.wayup-arrow__3').toggleClass('magictime tinLeftIn');
+}, 4000 );
+});
+
+$('.btn-escort').hover(function () {
+  $(this).addClass('magictime swashIn');
+  setInterval(function(){ 
+  $('.wayup-arrow__3').toggleClass('magictime tinLeftIn');
 }, 4000 );
 });
 
