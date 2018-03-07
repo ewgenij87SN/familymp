@@ -2968,7 +2968,7 @@ button {
 }
 .btn {
   min-width: 170px;
-  box-shadow: 0 0 10px #66a900;
+  box-shadow: 0 0 10px rgba(102,169,0,0.5);
   background-color: #66a900;
   display: inline-block;
   padding: 12px;
@@ -2987,6 +2987,11 @@ button {
 .btn-to-order:active {
   color: #d2d2d2;
   background-color: #fff;
+}
+.btn-header {
+  background-color: rgba(0,0,0,0.65);
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 .section-title {
   font-weight: 800;
@@ -3128,14 +3133,7 @@ input[type="submit"] {
   height: 100vh;
 }
 .vert {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-.vert justify-content space-between {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  height: 100vh;
 }
 .header-top {
   padding-top: 40px;
@@ -3143,12 +3141,15 @@ input[type="submit"] {
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .header-top ul {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
       align-items: center;
+  margin-bottom: 10vh;
 }
 .header-top ul li {
   margin-right: 40px;
@@ -3164,24 +3165,32 @@ input[type="submit"] {
   border-bottom: 2px solid rgba(255,255,255,0.4);
 }
 .promo {
-  width: 30%;
-  min-height: 100%;
+  width: 40%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding-bottom: 55vh;
+  margin-bottom: 1vh;
+}
+.promo h1 {
+  font-size: 3.5em;
+  text-align: left;
+  color: #fff;
+  line-height: 1.5em;
+  letter-spacing: 0.3em;
 }
 .promo p {
   font-family: "PT Sans";
   font-style: italic;
   color: #fff;
   font-size: 1em;
-}
-.promo h1 {
-  font-size: 2em;
-  text-align: center;
+  padding-top: 8em;
+  margin-bottom: 5px;
+  display: block;
+  box-shadow: rgba(0,0,0,0.6);
 }
 .consult {
   padding-top: 140px;
@@ -3427,7 +3436,7 @@ input[type="submit"] {
   color: #fff;
 }
 .book img {
-  width: 80vh;
+  width: 80%;
   margin: 0 auto;
   display: block;
   margin-top: 100px;
@@ -3453,7 +3462,11 @@ input[type="submit"] {
   font-style: italic;
   line-height: 1.3em;
 }
-.foot {
-  background: url("../img/general/bottom-line.png") no-repeat 0 100%;
-  background-size: contain;
+.book .way-item {
+  margin-bottom: 0;
+}
+.footer-page {
+  background-color: #00f;
+  background: url("../img/general/footer-bg.png") no-repeat 0 100%;
+  background-size: 100vh 10vh;
 }

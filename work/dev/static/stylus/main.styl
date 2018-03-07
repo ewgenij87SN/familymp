@@ -7,6 +7,9 @@
 //ШРИФТОВЫЕ Стили
 // @import '_font.styl'
 
+//MEDIA-ЗАПРОСЫ Стили
+// @import '_media.styl'
+
 // Подключаем спрайты (просто раскоментируем импорт при появлении PNG спрайтов)
 // @import '_sprite.styl'
 
@@ -132,7 +135,7 @@ button
 //- /////////////////////////////////////////////////////////////////////////////////
 .btn
   min-width 170px
-  box-shadow 0 0 10px tegre
+  box-shadow 0 0 10px rgba(102,169,0, .5);
   background-color tegre 
   display inline-block
   padding 12px
@@ -149,7 +152,9 @@ button
   &:active
     color #d2d2d2
     background-color #fff 
-
+.btn-header
+  background-color rgba(0,0,0, .65)
+  align-self flex-start
 // .btn-reviews, .btn-manual, .btn-to-catalog
 //   color #a38b70
 //   border-color #a38b70
@@ -339,22 +344,25 @@ input[type="submit"]
   height 100vh
 
 .vert 
-  display flex
-  -webkit-flex-direction column
-  -ms-flex-direction column
-  flex-direction column
-  justify-content space-between
-   justify-content: space-around
+  // display flex
+  // -webkit-flex-direction column
+  // -ms-flex-direction column
+  // flex-direction column
+  // justify-content space-between
+  // justify-content: space-between
+  height 100vh
 
 .header-top
   padding-top 40px
   display flex
   -webkit-justify-content space-between
   justify-content space-between
+  flex-wrap wrap
   ul
     display flex
     -webkit-align-items center
     align-items center
+    margin-bottom 10vh
     li
       margin-right 40px
       &:last-of-type
@@ -368,26 +376,41 @@ input[type="submit"]
           border-bottom 2px solid rgba(255, 255, 255, .4)
 
 .promo 
-  width 30%
-  min-height 100%
+  width 40%
+  // min-height 100%
   display flex
   -webkit-flex-direction column
   -ms-flex-direction column
   flex-direction column
-  -webkit-align-items center
-  align-items center
+  justify-content center
+  padding-bottom 55vh
+  margin-bottom 1vh
 
+.promo h1
+  font-size 3.5em
+  text-align left
+  color #fff
+  line-height 1.5em
+
+  letter-spacing .3em
+  
+  
 .promo p
   font-family "PT Sans"
   font-style italic
   color #FFF 
   font-size 1em
+  padding-top 8em
+  margin-bottom 5px
+  display block
+  box-shadow rgba(0, 0, 0, .6)
+//////////////////////////////////////////////////////////////////////////////
 
-.promo h1
-  font-size 2em
-  text-align center
-  
-  // box-sizing content-box
+
+
+
+
+
 //- /////////////////////////////////////////////////////////////////////////////////
 //- 
 //- 
@@ -674,6 +697,9 @@ input[type="submit"]
   font-style italic
   line-height 1.3em  
   
+.book .way-item
+  margin-bottom 0
+    
 //- /////////////////////////////////////////////////////////////////////////////////////////
 //- 
 //- 
@@ -681,6 +707,22 @@ input[type="submit"]
 //- 
 //- 
 //- /////////////////////////////////////////////////////////////////////////////////////////
-.foot
-  background url('../img/general/bottom-line.png') no-repeat 0 100%
-  background-size contain
+.footer-page
+  background-color blue 
+  background url('../img/general/footer-bg.png') no-repeat 0 100%
+  background-size 100vh 10vh
+
+// .footer
+//   min-height 10vh
+
+//   display flex
+//   -webkit-justify-content space-around
+//   justify-content space-around
+//   -webkit-align-items flex-end
+//   align-items flex-end
+//   flex-direction row
+//   font-size 0.7em
+//   line-height 1.3em
+//   text-align center
+// .footer p
+//   text-indent 0
