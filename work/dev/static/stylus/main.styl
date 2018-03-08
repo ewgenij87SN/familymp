@@ -357,23 +357,49 @@ input[type="submit"]
   display flex
   -webkit-justify-content space-between
   justify-content space-between
+  margin-bottom 15vh
   flex-wrap wrap
   ul
     display flex
-    -webkit-align-items center
-    align-items center
-    margin-bottom 10vh
+    flex-direction row
+    align-items flex-start
+    margin-bottom 5vh
+    
     li
-      margin-right 40px
+      margin-right 1em
+      position relative 
+      padding-left .8em
+      margin-bottom 1vh
+      
+
       &:last-of-type
-        margin-right 60px
+        // margin-right 60px
+      
       a
-        
+        font-size .7em
+        font-weight 400
+        line-height 1.5em
+        transition .15s ease-in
+        padding-right 1.5vh
+        border-radius 0 1vh 1vh 0
         &:hover
-          border-bottom 2px solid #fff 
+          // border-bottom 2px solid #fff 
+          background-color rgba(0,0,0, .4)
         &:active
           color rgba(255, 255, 255, .4)
           border-bottom 2px solid rgba(255, 255, 255, .4)
+        &:before
+          position absolute
+          content ""
+          background url("../img/general/circle05.png") no-repeat 
+          background-size contain
+          left 0
+          top 0
+          width .7em
+          height .7em
+          margin-top 0.6em
+          &:hover
+            background url("../img/general/header-bg.jpg") no-repeat
 
 .promo 
   width 40%
@@ -387,22 +413,22 @@ input[type="submit"]
   margin-bottom 1vh
 
 .promo h1
-  font-size 3.5em
+  font-size 3em
   text-align left
   color #fff
-  line-height 1.5em
+  line-height 1.4em
+  margin-bottom 5vh
 
-  letter-spacing .3em
+  letter-spacing .1em
   
   
 .promo p
   font-family "PT Sans"
   font-style italic
+  text-align left
   color #FFF 
   font-size 1em
-  padding-top 8em
   margin-bottom 5px
-  display block
   box-shadow rgba(0, 0, 0, .6)
 //////////////////////////////////////////////////////////////////////////////
 
