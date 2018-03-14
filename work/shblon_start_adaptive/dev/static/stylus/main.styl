@@ -1,0 +1,869 @@
+
+// Подключаем стили библиотек
+@import '_libs.styl'
+
+// Подключаем переменные
+@import '_vars.styl'
+
+//ШРИФТОВЫЕ Стили
+// @import '_font.styl'
+
+
+// Подключаем спрайты (просто раскоментируем импорт при появлении PNG спрайтов)
+// @import '_sprite.styl'
+
+// Подключаем миксины
+@import '_mixins.styl'
+
+html 
+  // line-height 1
+  font-size 16px
+  
+
+body
+  // font-family "mainFont"
+  font-family "PT Serif", serif
+  font-size 1.5em
+  color tbltr
+  // box-sizing border-box
+  
+  
+
+a
+  text-decoration none
+  color white
+  text-transform uppercase 
+  font-size .7em
+  font-family "Montserrat", sans-serif
+  font-weight 600 
+   
+
+h1,h2,h3,h4,h5,h6
+  margin 0
+  font-family "Montserrat", sans-serif
+  font-weight 900
+  color tblac
+
+ul,li
+  margin 0
+  padding 0
+  list-style-type none
+  
+p
+  margin 0
+  text-indent 20px
+  
+
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video
+  vertical-align middle
+  
+textarea
+  resize none
+
+section
+  position relative
+  margin-bottom 20px
+
+input,
+select,
+button
+  outline none
+
+*, *:before, *:after
+  box-sizing border-box
+  
+.hide
+  display none
+  
+.show
+  display block
+  
+::-moz-selection 
+  background: #b3d4fc;
+  text-shadow: none;
+  
+::selection 
+  background: #b3d4fc;
+  text-shadow: none;
+  
+.clearfix:before,
+.clearfix:after 
+  content: " ";
+  display: table;
+
+.clearfix:after 
+  clear: both;
+
+.clearfix 
+  *zoom: 1;
+
+
+
+.container
+  // // width 100%
+  // max-width 1020px
+  display grid
+  width 90%
+
+  
+  
+
+
+
+// Общие стили
+@import '_common_styles.styl'
+
+// Стили шапки
+@import 'modules/_header.styl'
+
+// Стили меню
+@import 'modules/_menu.styl'
+
+// Стили главной страницы
+@import 'page/_index.styl'
+
+// Стили "Сетка Grid"
+@import '_matrica_grid.styl' 
+
+// // Стили медиазапросов
+// @import '_media.styl'
+
+// // Стили футера
+// @import 'modules/_footer.styl'
+
+//- /////////////////////////////////////////////////////////////////////////////////
+//- 
+//- 
+//- ОБЩИЕ СТИЛИ
+//- 
+//- /////////////////////////////////////////////////////////////////////////////////
+.section-title
+  font-weight 800
+  font-size 2.5em
+  color rgba(0,0,0,0.6)
+  padding-top 100px
+  margin-bottom 80px
+  span
+    color tegre
+.sub-title
+  font-weight 600
+  font-size 1.3em
+  line-height 1.3em
+  text-align center
+  color rgba(0,0,0,0.5)
+  margin-bottom 10px
+  padding-left 15px
+  padding-right 15px
+  padding-top 5px
+  padding-bottom 10px
+  // box-shadow: 0 5px 5px -5px #333
+  position relative
+  &:after
+    content ""
+    position absolute
+    height 100%
+    width 4px
+    background-color tegre
+    top 0
+    left -4px
+  &:before
+    content ""
+    position absolute
+    height 100%
+    width 4px
+    background-color tegre
+    top 0
+    right -4px
+     
+        
+.way-item
+  border-bottom 5px solid tegre
+  box-shadow: 0 0 5px #333
+  // box-shadow 0 0 10px rgba(0,0,0,0.3)
+  padding 20px
+  margin-top 70px
+  margin-bottom 70px
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+
+
+//- /////////////////////////////////////////////////////////////////////////////////
+//- 
+//- page-header
+//- 
+//- 
+//- /////////////////////////////////////////////////////////////////////////////////
+.page-header
+  background-color #363636
+  color #c3c3c3 
+  background url("../img/general/header-bg.jpg") no-repeat 50% 50%
+  // -moz-linear-gradient(left, black, transparent 20%), 
+  background-size cover 
+  min-height 100vh
+  display flex
+  justify-content space-between
+
+.grid-header
+  margin-bottom 1vh
+  width 90vw
+  
+
+.header-top
+  padding-top 40px
+  display flex
+  flex-direction column
+  justify-content space-between
+  margin 5vh
+  margin-bottom 15vh
+.nav-menu
+  display flex
+  flex-direction column  
+.header-top ul
+    // display flex
+    // flex-direction column
+    // align-items flex-start
+    // margin-bottom 5vh
+    margin-bottom 5vh
+    
+    li
+      margin-right 1em
+      position relative 
+      padding-left 1em
+      transition .15s ease-in
+      border-radius 1vw
+      border-top 1px solid transparent
+      margin-bottom 5vh
+      &:hover
+        background linear-gradient(to top, rgba(8,209,32, .25) 5%, rgba(8,209,32, .25) 45%,transparent 95%)
+        border-top 1px solid rgb(102,169,0)
+        
+        // box-sizing border-box 
+
+      &:last-of-type
+        // margin-bottom 5vh
+      
+      a
+        // font-size .7em
+        font-weight 400
+        line-height 1.5em
+        transition .5s ease-in
+        padding-right 1.5vh
+        // padding .5vh 1vw
+        border-radius 0 1vh 1vh 0
+        &:last-of-type
+          padding-right -1px
+          padding-top -1px
+        &:active
+          color rgba(255, 255, 255, .4)
+          background linear-gradient(to top, rgba(102,169,0, .25) 5%,rgba(102,169,0, .30) 45%,transparent 95%)
+          border-top 1px solid rgb(102,169,0)
+        &:before
+          position absolute
+          content ""
+          background url("../img/general/circle05.png") no-repeat 
+          background-size contain
+          left 0
+          top 0
+          width 1.2em
+          height 1.2em
+          margin-top .35em
+          &:hover
+            background url("../img/general/header-bg.jpg") no-repeat
+
+.promo 
+  // width 40%
+  // min-height 100%
+  display flex
+  -webkit-flex-direction column
+  -ms-flex-direction column
+  flex-direction column
+  justify-content center
+  padding-bottom 2vh
+  margin-bottom 2vh
+  
+.promo h1
+  text-align left
+  color #fff
+  line-height 1.4em
+  margin-bottom 1vh
+  letter-spacing .1em
+  
+  
+.promo p
+  font-family "PT Sans"
+  font-style italic
+  text-align left
+  color #FFF 
+  font-size .7em
+  margin-bottom 5px
+  box-shadow rgba(0, 0, 0, .6)
+  
+
+
+  
+// .page-header .container
+//   @media screen and (min-width: 1920px) {
+//     .btn-header {
+//       margin 0
+//       hight 1vh
+//     }
+//   }
+
+//////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+//- /////////////////////////////////////////////////////////////////////////////////
+//- 
+//- 
+//- ВИДЫ КОНСУЛЬТАЦИЙ
+//- 
+//- 
+//- /////////////////////////////////////////////////////////////////////////////////
+
+    
+
+.consult
+  .container
+    padding-top 10vh
+    padding-bottom 15vh
+    padding-left 5vh
+    padding-right 5vh
+    background url('../img/general/top-line.png') no-repeat,
+               url('../img/general/bottom-line.png') no-repeat 0 100%
+    background-color #FFF
+    background-size contain
+    display flex
+    flex-direction row
+    justify-content space-around
+    align-items center
+    min-height 40vh
+    box-sizing content-box
+    
+  
+
+.consult-title
+  font-size 1em
+  font-style italic
+  font-weight 600  
+  
+.consult-item
+  border-right 1px solid gray
+  // display inline-block
+  padding 1vh
+  text-align center
+  position relative
+  margin-bottom 5vh
+  margin-top 5vh
+  padding 15vh
+  padding-top 20vh
+  box-shadow 0 0 10px 0 gray
+  
+  &:last-of-type
+    border none
+  
+  &::before
+    content ""
+    position absolute
+    padding-top 12vh
+    width 5vw
+    height 10vh
+    background url('../img/general/family.svg') no-repeat 
+    background-size contain
+    top 2.5vh
+    right -2.5vw
+    left -2.5vw
+    margin 0 auto
+    // transform rotate(90deg)
+    // left 137px
+
+.consult--individual::before
+  // content "\f0d7"
+  
+.consult--family::before
+  background none
+  background url('../img/general/family.svg') no-repeat
+.consult--online::before
+  background url('../img/general/phone-call.svg') no-repeat
+  // content "\f0d7"
+  //- /////////////////////////////////////////////////////////////////////////////////
+  //- 
+  //- 
+  //- ПУТЬ К УСПЕХУ
+  //- 
+  //- 
+  //- /////////////////////////////////////////////////////////////////////////////////
+.headway
+  padding-bottom 200px
+  background-color red
+  background url('../img/general/bottom-line.png') no-repeat 0 100%
+  -webkit-background-size contain 
+  -o-background-size contain 
+  background-size contain 
+  padding-top 100px
+  
+  // background-color rgba(0,0,0, .05) 
+.headway header
+    margin-bottom 80px
+    display flex
+    -webkit-justify-content space-between
+    justify-content space-between    
+    padding-left 10px
+    padding-right 10px
+    font-weight 600
+.headway 
+  .section-title
+    padding-top 0
+    margin-bottom 0
+.headway a
+  &:first-of-type
+    line-height 150%      
+.wayup
+  display flex
+  justify-content space-between
+  
+  
+.wayup-item
+  padding 10px 30px
+  margin-left 15px
+  margin-right 15px
+  text-align center
+  font-family "Montserrat", sans-serif
+  font-weight 700
+  font-size .7em
+  text-transform uppercase
+  color #fff
+  background linear-gradient(to top, tegre 0%, tegre 74%, #7DCF00 100%)
+  -webkit-border-radius 20px 
+  border-radius 20px
+
+.wayup-arrow
+  min-width 30px 
+  background url('../img/general/arrow.png') no-repeat 50% 50%
+  background-size contain
+
+.headway-section
+  line-height 120%
+  display flex
+  -webkit-flex-direction column
+  -ms-flex-direction column
+  flex-direction column
+   
+.headway-item__1
+  display flex
+  -webkit-align-items center 
+  align-items center   
+.headway-item__1 p 
+    align-self center
+    font-style italic 
+    font-size 1.1em
+    line-height 1.3em  
+.headway-item__1 ul 
+  margin-left 80px
+  width 70%
+  li
+    padding-left 10px
+    margin-bottom 15px
+    .fa-check-square 
+      color tegre 
+  
+.headway-item__2
+  display flex
+  -webkit-flex-direction column
+  -ms-flex-direction column
+  flex-direction column
+  margin-top 0
+.headway-item__2 p
+  font-style italic
+  font-size 1.1em
+  line-height 1.3em 
+.headway-item__2 ul 
+  padding-top 30px
+  position relative
+  &:after
+      content ""
+      position absolute
+      bottom -20px
+      right -55px
+      width 10em
+      height 10em
+      background url("../img/general/headway1.png") no-repeat 50% 50%
+      -webkit-background-size contain 
+      -o-background-size contain 
+      background-size contain 
+      z-index -1
+  li
+    display inline-block
+    margin-bottom 25px
+    padding 5px
+    padding-left 45px
+    padding-right 15px
+    border-top 1px solid rgb(53,227,40)
+    border-left 1px solid rgb(53,227,40)
+    border-right 1px solid rgb(53,227,40)
+    border-bottom 1px solid rgb(53,227,40)
+    border-radius 0 10px 10px 0
+    position relative
+    background-color rgba(255, 255, 255, .7)
+    z-index 2
+    &:before
+      content "\f067"
+      font-family FontAwesome
+      position absolute
+      color tegre 
+
+      left 5px
+      font-size 1.5em 
+
+.headway
+  .container
+    .btn-headway
+      display table
+      margin 0 auto
+      
+//- /////////////////////////////////////////////////////////////////////////////////
+//- 
+//- 
+//- 
+//- FAMILYWAY ПУТЬ К СЧАСТЛИВОЙ СЕМЬЕ
+//- 
+//- 
+//- /////////////////////////////////////////////////////////////////////////////////
+.familyway 
+  line-height 1.3em
+  background url('../img/general/bottom-line.png') no-repeat 0 100%
+  background-color #FFF
+  background-size contain
+  padding-bottom 120px
+  
+.bottom-text
+  font-style italic
+  font-size 1.3em
+  font-weight 600
+  text-align center
+  line-height 1.5em
+  color rgba(0, 0, 0, .1)
+  
+//- /////////////////////////////////////////////////////////////////////////////////
+//- 
+//- 
+//- ESCORT КАК НАЙТИ СВОЮ ПОЛОВИНКУ
+//- 
+//- 
+//- /////////////////////////////////////////////////////////////////////////////////
+.grid-escort
+  display flex
+  -webkit-flex-direction column
+  -ms-flex-direction column
+  flex-direction column
+  align-items center
+
+
+.escort
+  line-height 1.3em
+  background url('../img/general/bottom-line.png') no-repeat 0 100%
+  background-color #FFF
+  background-size border-box
+  padding-bottom 150px
+.escort-item
+  box-shadow: 0 0 8px #333
+  // box-shadow 0 0 10px rgba(0,0,0,0.6)
+  margin-right 30px
+  display flex
+  flex-direction column
+  justify-content space-around
+  align-items center
+  margin 2vh 2vw 8vh 5vw
+  
+   
+  
+  &:last-of-type
+    margin-right 0
+.escort-item p
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  font-size 0.7em
+  line-height 1.3em
+  padding-left 10px
+  padding-right 10px
+  padding-bottom 10px
+  font-style italic 
+.escort-item:last-of-type
+  box-shadow none
+  display flex
+  -webkit-flex-direction column
+  -ms-flex-direction column
+  flex-direction column
+  justify-content space-between
+  margin-bottom 20vh
+
+.sub-escort-item
+  box-shadow: 0 0 8px #333
+  padding-bottom 30px
+
+.btn-escort
+  background-color rgba(0, 0, 0, .01) 
+  color rgb(220,220,220, .1)
+  transition: .15s ease-in
+  margin-top 5vh
+  &:hover
+    background-color tegre
+    color #fff
+    
+
+.section-polovinka
+  display flex
+  flex-direction row
+  justify-content space-around
+  align-items center
+//- /////////////////////////////////////////////////////////////////////////////////
+//- 
+//- 
+//- BOOK КНИГА ПУТИ
+//- 
+//-
+//- /////////////////////////////////////////////////////////////////////////////////
+
+.book img 
+  width 80%
+  // width 80vh
+  margin 0 auto
+  display block
+  margin-top 100px
+
+.book 
+  .section-title
+    text-align center
+    line-height 1.3em
+    padding-top 30px
+    margin-bottom 0
+    font-size 2em
+  
+.book .way-item:first-of-type
+  margin-bottom 0
+.book .way-item:last-of-type
+  margin-top 0
+.book p 
+  line-height 1.3em
+  text-indent 40px
+.book-italic
+  font-style italic
+  line-height 1.3em  
+  
+.book .way-item
+  margin-bottom 0
+    
+//- /////////////////////////////////////////////////////////////////////////////////////////
+//- 
+//- 
+//- FOOTER
+//- 
+//- 
+//- /////////////////////////////////////////////////////////////////////////////////////////
+.footer-page
+  background-color blue 
+  background url('../img/general/footer-bg.png') no-repeat 0 100%
+  background-size 100vh 10vh
+
+// .footer
+//   min-height 10vh
+
+//   display flex
+//   -webkit-justify-content space-around
+//   justify-content space-around
+//   -webkit-align-items flex-end
+//   align-items flex-end
+//   flex-direction row
+//   font-size 0.7em
+//   line-height 1.3em
+//   text-align center
+// .footer p
+//   text-indent 0
+
+//- /////////////////////////////////////////////////////////////////////////////////
+//- 
+//- 
+//- POPUP
+//- 
+//- 
+//- /////////////////////////////////////////////////////////////////////////////////
+.popup 
+  background-color #FFF 
+  width 60vw
+  padding 20px
+  margin 0 auto
+  opacity .9
+  
+form 
+width 630px
+padding-right 390px
+// background url("../img/general/pen.png") no-repeat 100% 40px
+box-sizing content-box
+min-height 650px
+padding-bottom 175px
+    
+label
+  display inline-block
+  padding-bottom 12px
+  padding-top 25px
+  padding-left 20px
+  line-height 1
+
+input, select, textarea
+  width 100%
+  padding 12px
+  border 2px solid #d5d5d5
+  line-height 1
+  &:hover
+    border 2px solid #b6b6b6
+  &:focus
+     border 2px solid #8d745a
+
+
+       
+.checkbox
+  border-bottom 2px solid #d5d5d5
+  width 100%
+  margin-bottom 40px
+  input[type="checkbox"] 
+    display none
+    &:checked
+      &~.custom-checkbox
+        &:after
+          background-color #8d745a
+          border 2px solid gray
+          border-radius 3px
+          
+          
+.custom-checkbox
+  position relative
+  display block
+  width 20px
+  height 20px
+  margin-right 20px
+  border 1px solid #7e7e7e
+  border-radius 5px
+  float left
+  &:after
+    content ''
+    position absolute
+    top 2px
+    right 2px
+    left 2px
+    bottom 2px
+    transition all linear .2s
+.checkbox-text
+  margin-top 2px
+  display inline-block
+  
+input[type="submit"]
+  margin 0 auto
+  margin-top 30px
+  text-transform uppercase
+  width 170px
+  border none
+
+.feedback-form-group
+  margin-bottom 2vh
+
+  
+//- /////////////////////////////////////////////////////////////////////////////////
+//- 
+//- КНОПКИ
+//-   
+//- /////////////////////////////////////////////////////////////////////////////////
+.btn
+  min-width 170px
+  box-shadow 0 0 10px rgba(102,169,0, .5);
+  background-color tegre 
+  // display inline-block
+  padding 12px
+  border 1px solid rgba(0, 0, 0, .3)
+  text-align center
+  border-radius 3px
+  
+.btn-to-order
+  border 2px solid #fff
+  transition .4 ease-in
+  &:hover
+    color #404040
+    background-color #fff
+  &:active
+    color #d2d2d2
+    background-color #fff 
+.btn-header
+  background-color rgba(0,0,0, .65)
+  transition .25s ease-in
+  align-self flex-start
+  &:hover
+    background-color rgba(255,255,0, .15)
+  &:active
+    background-color rgba(255,255,255, .35)
+
+  
+  &:last-of-type
+    min-width auto
+    padding-left 1.3em
+    padding-right 1.3em
+// .btn-reviews, .btn-manual, .btn-to-catalog
+//   color #a38b70
+//   border-color #a38b70
+//   &:hover
+//     background-color: #8d745a
+//     color #fff
+//     border-color #8d745a
+//   &:active
+//     color rgba(255, 255, 255, .3) 
+
+// .btn-info, .btn-buy
+//   background-color: #a38b70
+//   min-width 125px
+//   margin-top 27px
+//   border none
+//   &:hover
+//     background-color: #8d745a
+//   &:active
+//     color rgba(255, 255, 255, .3) 
+    
+// .btn-info
+//   float left
+//   margin-left 20px
+// .btn-buy
+//   float right
+//   margin-right 20px
+
+// .btn-submit
+//   background-color: #a38b71
+//   width 140px
+//   margin-top 27px
+//   color #fff
+//   border none
+//   &:hover
+//     background-color: #8d745a
+//   &:active
+//     color rgba(255, 255, 255, .3) 
+
+
+
+
+ 
+//- /////////////////////////////////////////////////////////////////////////////////
+//- 
+//- HZ CHTO NIZHE OUSTIT'
+//- KOPIJU MEDIA-ZAPROSOV?
+//-   
+//- /////////////////////////////////////////////////////////////////////////////////
+
+// MEDIA-ЗАПРОСЫ Стили
+@import '_media.styl'

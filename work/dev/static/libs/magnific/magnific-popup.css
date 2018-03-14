@@ -7,8 +7,8 @@
   z-index: 1042;
   overflow: hidden;
   position: fixed;
-  background: #0b0b0b;
-  opacity: 0.8; }
+  background: linear-gradient(to right, transparent 10%, black 80%), linear-gradient(to left, transparent 10%, black 80%);
+  opacity: .9; }
 
 .mfp-wrap {
   top: 0;
